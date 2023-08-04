@@ -1,5 +1,7 @@
 # SvelteKit App | Chromium Extension
 
+[github.com/SvelteKitApp/sveltekitapp-chromium-extension-tpl-sveltekit](https://github.com/SvelteKitApp/sveltekitapp-chromium-extension-tpl-sveltekit)
+
 - генерация проекта [`create-svelte v5`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
 ```bash
@@ -26,6 +28,35 @@ create-svelte version 5.0.4
 └  Your project is ready!
 $cd sveltekitapp-chromium-extension-tpl-sveltekit
 $git init && git add -A && git commit -m ":star: Start project"
+```
+
+- установка [svelte adapter static](https://github.com/sveltejs/kit/tree/master/packages/adapter-static) в соотвествии с [инсктрукцией](https://kit.svelte.dev/docs/single-page-apps#usage)
+
+```bash
+$npm uninstall -D @sveltejs/adapter-auto
+$npm i -D @sveltejs/adapter-static
+```
+
+```diff
+# svelte.config.js
+-import adapter from '@sveltejs/adapter-auto';
++import adapter from '@sveltejs/adapter-static';
+ import { vitePreprocess } from '@sveltejs/kit/vite';
+# ...
+-		adapter: adapter()
++		adapter: adapter({
++			fallback: 'index.html'
++		}),
++    appDir: 'ext'
+ 	}
+ };
+```
+
+### Добавление TailwindCSS
+
+```bash
+$npx svelte-add@latest tailwindcss
+➕ Svelte Add (Version 2023.06.280.00)
 ```
 
 ## Developing
