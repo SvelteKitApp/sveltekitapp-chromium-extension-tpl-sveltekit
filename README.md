@@ -59,6 +59,14 @@ $npx svelte-add@latest tailwindcss
 ➕ Svelte Add (Version 2023.06.280.00)
 ```
 
+### Подготовка к разработки расширения
+
+- установка пакета `@types/chrome`
+
+```bash
+$npm i -D @types/chrome
+```
+
 ## Developing
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
