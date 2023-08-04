@@ -67,6 +67,13 @@ $npx svelte-add@latest tailwindcss
 $npm i -D @types/chrome
 ```
 
+- установка плагина [crxjs vite plugin](https://crxjs.dev/vite-plugin)
+
+```bash
+# NOTE: использование beta версии для совместимости с текушими зависимостями
+$npm i -D @crxjs/vite-plugin@2.0.0-beta.18
+```
+
 ## Developing
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
