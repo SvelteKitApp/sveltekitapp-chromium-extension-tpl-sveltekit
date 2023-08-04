@@ -59,7 +59,7 @@ $npx svelte-add@latest tailwindcss
 ➕ Svelte Add (Version 2023.06.280.00)
 ```
 
-### Подготовка к разработки расширения
+### Подготовка к разработке расширения
 
 - установка пакета `@types/chrome`
 
